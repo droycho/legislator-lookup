@@ -1,5 +1,5 @@
 <ul>
   {{#each model as |legislator|}}
-    <li> {{legislator.first_name}} {{legislator.last_name}}<br>Contact: <a href= {{legislator.contact_form}}>{{legislator.contact_form}}</a></li>
-  {{/each}}  
+    <li> <strong>{{legislator.first_name}} {{legislator.last_name}}</strong><br>Chamber: {{legislator.chamber}}<br>Term start: {{legislator.term_start}}<br>Term end: {{legislator.term_end}}<br>State: {{legislator.state_name}}<br>Contact: <a href= {{legislator.contact_form}}>{{legislator.contact_form}}</a><br>Website: <a href= {{legislator.website}}>{{legislator.website}}</a></li>
+  {{/each}}
 </ul>
